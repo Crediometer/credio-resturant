@@ -1,0 +1,48 @@
+.clockin{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clockin h4{
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000000;
+}
+.clockin p{
+    margin-top: 21px;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #000000;
+}
+.clockin button{
+    margin-top: 80px;
+    margin-bottom: 32px;
+    width: 65%;
+    height: 68px;
+    border-radius: 10px;
+    background-color: #B11226;
+    color: white;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 1.25rem;
+    border: none;
+}
+.clockin button:nth-child(1){
+    margin-top: 0px;
+}
+.clockin a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-note{
+    font-family: "Mulish";
+    font-weight: 500 !important;
+    font-size: 1.2rem;
+    color: #055E2D !important;
+}

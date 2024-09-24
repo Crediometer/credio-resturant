@@ -1,0 +1,80 @@
+.pin-pad {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .pin-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .dot.filled {
+    background-color: white;
+  }
+  
+  .pin-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #1B232D;
+    color: white;
+    border: 1px solid #FFFFFF;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }     
+  button.zero {
+    grid-column: 2; /* Places the 0 in the center column */
+  }
+  
+  button.backspace {  /* Custom height */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    grid-column: 3; /* Places the x in the rightmost column */
+    background-color: #1B232D;
+    border-radius: 70px 10px 10px 70px;
+  }
+  
+  .submit-btn {
+    background-color: white;
+    color: #c80000;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+ 
