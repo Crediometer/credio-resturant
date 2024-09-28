@@ -26,13 +26,12 @@ export default function Router() {
     },
     {
       path: "/home",
-    
+      element:  <Topbar />,
       children: [
         { index: true, element: <Home/> },
         // { path: "role", element: <Role/> },
         // { path: "board/:id", element: <ClockInBoard/> },
       ],
-      element:  <Topbar />,
     },
   ]);
 

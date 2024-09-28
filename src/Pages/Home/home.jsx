@@ -95,7 +95,7 @@ const Home  = () => {
                 </div>
             </div>
             <div className="bar">
-
+                <p className="sit-text">Bar</p>
             </div>
         </div>
     );
