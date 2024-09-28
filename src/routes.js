@@ -5,6 +5,7 @@ import Topbar from "./Components/Topbar/Topbar";
 import Clockin from "./Pages/Clock/Clockin"
 import Role from "./Pages/Clock/Clockin-role";
 import ClockInBoard from "./Pages/Clock/Clockin-board";
+import Home from "./Pages/Home/home";
 
 
 export default function Router() {
@@ -20,8 +21,18 @@ export default function Router() {
       children: [
         { index: true, element: <Clockin /> },
         { path: "role", element: <Role/> },
-        { path: "board", element: <ClockInBoard/> },
+        { path: "board/:id", element: <ClockInBoard/> },
       ],
+    },
+    {
+      path: "/home",
+    
+      children: [
+        { index: true, element: <Home/> },
+        // { path: "role", element: <Role/> },
+        // { path: "board/:id", element: <ClockInBoard/> },
+      ],
+      element:  <Topbar />,
     },
   ]);
 

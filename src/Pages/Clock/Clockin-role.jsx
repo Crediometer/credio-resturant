@@ -24,11 +24,11 @@ const Role = () => {
         <div className="clockin">
             <h4>{formatTime(currentTime)}</h4>
             <p>Select a Job</p>
-            <Link to="/clockin/board">
+            <Link to={`/clockin/board/${"Server"}`}>
                 <button>Server</button>
             </Link>
-            <Link to="/clockin/board">
-                <button>Bartender</button>
+            <Link to={`/clockin/board/${"Bartender"}`}>
+                <button className="button-bottom">Bartender</button>
             </Link>
         </div>
     );

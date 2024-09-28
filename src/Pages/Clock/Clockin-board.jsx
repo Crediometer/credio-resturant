@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Clockin.css"
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 const ClockInBoard = () => {
+    const {id} = useParams() 
     const [currentTime, setCurrentTime] = useState(new Date());
 
     useEffect(() => {
@@ -23,7 +24,7 @@ const ClockInBoard = () => {
     return ( 
         <div className="clockin">
             <h4>{formatTime(currentTime)}</h4>
-            <p>Clocked in as Server</p>
+            <p>Clocked in as {id}</p>
             <p className="add-note">Add Notes</p>
             <Link to="/">
                 <button>Continue to Dinepoint for Restaurats</button>

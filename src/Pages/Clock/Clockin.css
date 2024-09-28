@@ -32,8 +32,8 @@
     font-size: 1.25rem;
     border: none;
 }
-.clockin button:nth-child(1){
-    margin-top: 0px;
+.button-bottom{
+    margin-top: 0px !important;
 }
 .clockin a{
     display: flex;
