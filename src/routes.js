@@ -6,6 +6,7 @@ import Clockin from "./Pages/Clock/Clockin"
 import Role from "./Pages/Clock/Clockin-role";
 import ClockInBoard from "./Pages/Clock/Clockin-board";
 import Home from "./Pages/Home/home";
+import Bottombar from "./Components/Bottombar/Bottombar";
 
 
 export default function Router() {
@@ -26,7 +27,7 @@ export default function Router() {
     },
     {
       path: "/home",
-      element:  <Topbar />,
+      element:  <Bottombar />,
       children: [
         { index: true, element: <Home/> },
         // { path: "role", element: <Role/> },
