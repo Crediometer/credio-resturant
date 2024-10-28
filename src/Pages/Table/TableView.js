@@ -3,6 +3,7 @@ import Navbar from "../../Components/layout/Navbar/Navbar";
 import "./TableView.css"
 import { MdTableRestaurant } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
+import reserved from "../../assets/reserved.png"
 const TableView = () => {
     return ( 
         <div className="table-view">
@@ -51,7 +52,7 @@ const TableView = () => {
             </div>
             <div className="table-view-body">
                 <div className="table-setup">
-
+                    <img src={reserved}></img>
                 </div>
                 <div className="table-tab">
                     <p className="tab-date">Thus. 11 January 2024</p>
@@ -162,7 +163,7 @@ const TableView = () => {
                             <p>Paid</p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
