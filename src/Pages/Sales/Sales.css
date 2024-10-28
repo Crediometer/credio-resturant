@@ -1,0 +1,213 @@
+.sales{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sales-left{
+    width: 80%;
+    padding: 1rem 3rem;
+}
+.sales-right{
+    width: 20%;
+}
+.sales-left-top{
+    display: flex;
+    justify-content: space-between;
+}
+.sales-left-top h5{
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-family: "Mulish";
+    color: #000000;
+}
+.sales-left-top svg{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #000000;
+}
+.menu-container {
+    overflow-y: scroll;
+    display: grid;
+    height: 90vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    padding: 20px;
+    padding-bottom: 5rem;
+}
+.menu-container::-webkit-scrollbar{
+    width: 10px;
+}
+.menu-container::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.menu-container::-webkit-scrollbar-thumb{
+    background: rgb(146, 145, 145);
+    border-radius: 10px;
+}
+  .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* Grid positions and spans */
+  .appetizers-salads {
+    background-color: #e57373;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .entrees {
+    background-color: #81c784;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .sandwiches {
+    background-color: #64b5f6;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  .desserts {
+    background-color: #ffcc80;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+  
+  .burgers {
+    background-color: #ba68c8;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  
+  .sushi-rolls {
+    background-color: #9575cd;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .pizza {
+    background-color: #ffb74d;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+  
+  .open-food {
+    background-color: #ffccbc;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+  
+  .red-wine {
+    background-color: #e57373;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .beer {
+    background-color: #ff8a65;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  
+  .white-wine {
+    background-color: #fbc02d;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  
+  .gift-cards {
+    background-color: #ff7043;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  
+  .classic-cocktails {
+    background-color: #4db6ac;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  
+  .coffee {
+    background-color: #6d4c41;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  
+  .non-alcoholic {
+    background-color: #64b5f6;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  }
+  
+  .daily-dinner-special {
+    background-color: #ffccbc;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  
+  .variable {
+    background-color: #ffe0b2;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+  }
+  
+  .daily-lunch-special {
+    background-color: #ffccbc;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+  }
+  
+  .variable {
+    background-color: #ffe0b2;
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+  }
+  
+  .to-go {
+    background-color: #e57373;
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+  }
+  
+  .open-drawer {
+    background-color: #ffcc80;
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+  }
+  
+  .edit-customer {
+    background-color: #ff7043;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  
+  .calculator {
+    background-color: #ffe0b2;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .menu-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(auto, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, 1fr);
+    }
+  }

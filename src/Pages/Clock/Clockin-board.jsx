@@ -25,9 +25,9 @@ const ClockInBoard = () => {
         <div className="clockin">
             <h4>{formatTime(currentTime)}</h4>
             <p>Clocked in as {id}</p>
-            <p className="add-note">Add Notes</p>
+            <p>You will be working from 8:00AM - 8:00PM<br></br> on sit 1,2,3,4 </p>
             <Link to="/home">
-                <button>Continue to Dinepoint for Restaurats</button>
+                <button>Continue to Dinepoint for Restaurants</button>
             </Link>
         </div>
     );

@@ -1,0 +1,13 @@
+.layout{
+    display: flex;
+    width: 100%;
+}
+/* .layout-left{
+    width: 171px;
+} */
+.layout-right{
+    position: relative;
+    margin-left: 171px;
+    padding: 0rem 2.13rem 1rem 2.13rem;
+    width: calc(100% - 171px);
+}

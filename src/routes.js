@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, useRoutes} from "react-router-dom";
+
 import Login from "./Pages/Login/Login";
 import Topbar from "./Components/Topbar/Topbar";
-import Clockin from "./Pages/Clock/Clockin"
 import Role from "./Pages/Clock/Clockin-role";
 import ClockInBoard from "./Pages/Clock/Clockin-board";
-import Home from "./Pages/Home/home";
-import Bottombar from "./Components/Bottombar/Bottombar";
+import Sales from "./Pages/Sales/Sales";
+import Layout from "./Components/layout/Layout";
+import Orders from "./Pages/Orders/Order";
+import Reservation from "./Pages/Reservation/Reservation";
+import ReservationDetails from "./Pages/Reservation/ReservationDetails";
+import TableView from "./Pages/Table/TableView";
 
 
 export default function Router() {
@@ -20,18 +24,18 @@ export default function Router() {
       path: "/clockin",
       element:  <Topbar />,
       children: [
-        { index: true, element: <Clockin /> },
-        { path: "role", element: <Role/> },
+        { index: true, element: <Role/> },
         { path: "board/:id", element: <ClockInBoard/> },
       ],
     },
     {
       path: "/home",
-      element:  <Bottombar />,
+      element:  <Layout/>,
       children: [
-        { index: true, element: <Home/> },
-        // { path: "role", element: <Role/> },
-        // { path: "board/:id", element: <ClockInBoard/> },
+        { index: true, element: <Orders/> },
+        { path: "reservation", element: <Reservation/> },
+        { path: "reservation/details", element: <ReservationDetails/> },
+        { path: "table-view", element: <TableView/> },
       ],
     },
   ]);

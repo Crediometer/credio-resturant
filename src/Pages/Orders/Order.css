@@ -1,0 +1,69 @@
+.orders-top{
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.orders-top-left nav ul{ 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.orders-top-left nav ul li{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+}
+.active{
+    font-family: "Poppins";
+    font-size: 1rem;
+    padding: 0.875rem 1.375rem;
+    background-color: #B11226;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    border-radius: 7.48px;
+}
+.order-search{
+    display: flex;
+    align-items: center;
+    gap: 83px;
+    padding: 0.98rem;
+    background-color: #3D4142;
+    border-radius: 10px;
+}
+.order-search input{
+    border: none;
+    background-color: transparent;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+}
+.order-search input::placeholder{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+}
+.order-search input:focus{
+    outline: none;
+}
+.order-search svg{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+.orders-body{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+@media (max-width:1280px) {
+    .orders-body{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+}

@@ -1,0 +1,166 @@
+.order-card{
+    background-color: #292C2D;
+    padding: 1.125rem;
+    border-radius: 10px;
+}
+.order-card-top{
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid #5E5E5E;
+}
+.order-card .order-card-top .order-card-top-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-left .order-no{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B11226;
+    border-radius: 5px;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-left .order-no h1{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: 1.5rem;
+    color: #FFFFFF;
+}
+.order-card .order-card-top-inner .order-card-top-left .table-no{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.order-card  .order-card-top-inner .order-card-top-left .table-no-small{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 15px;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right .order-status{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 7px;
+    background-color: #E3FFE4;
+    border-radius: 5px;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right .order-status svg{
+    font-size: 0.75rem;
+    color: #333333;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right .order-status p{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: #333333;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right .order-state{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right .order-state .order-color{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #37D101;
+}
+.order-card .order-card-top .order-card-top-inner .order-card-top-right .order-state p{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+.order-timeline{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-timeline p{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.order-card-body{
+    margin-top: 15px;
+}
+.order-card-body-inner{
+    overflow: scroll;
+    height: 150px;
+    padding-bottom: 0.9375rem;
+    border-bottom: 1px solid #5E5E5E;
+}
+.order-card-body-inner::-webkit-scrollbar{
+    display: none;
+}
+.order-card-body-inner table{
+    width: 100%;
+}
+.order-card-body-inner table tr th{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ffffff97;
+    text-align: left;
+    padding-bottom: 0.625rem;
+}
+.order-card-body-inner table tr td{
+    width: max-content;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: left;
+    padding-bottom: 0.25rem;
+}
+.total-order{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total-order p{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.order-card-bottom{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.order-icon{
+    padding: 1.25rem 1.68rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+.order-icon svg{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.order-card-bottom button{
+    padding: 1.25rem 3.4rem;
+    background-color: #B11226;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,93 @@
+.modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000099;
+    overflow: hidden;
+    z-index: 6;
+}
+.modal-box{
+    width: 40%;
+    height: 90vh;
+    overflow: scroll;
+    background-color: #292C2D;
+    padding: 3rem 1.8rem;
+}
+.modal-box::-webkit-scrollbar{
+    display:none;
+}
+.reservation-modal-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #5E5E5E;
+}
+.reservation-modal-top div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #3D4142;
+}
+.reservation-modal-top div svg{
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+.reservation-modal-top p, .reservation-details-form p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+.reservation-details-form{
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #5E5E5E;
+}
+.reservation-details-form p{
+    margin-top: 25px;
+}
+.reservation-details-form form{
+    margin-top: 25px;
+    width: 100%;
+}
+.modal-form{
+    display: flex;
+    align-items: last baseline;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.form-1{
+    width: 50%;
+}
+.form-2{
+    width: 100%;
+}
+.form-1 label, .form-2 label{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.form-1 input, .form-1 select, .form-2 select, .form-2 input{
+    margin-top: 8px;
+    width: 100%;
+    background-color: #3D4142;
+    border: none;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.form-1 input::placeholder, .form-2 input::placeholder{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+}

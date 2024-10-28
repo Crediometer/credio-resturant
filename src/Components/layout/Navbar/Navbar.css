@@ -1,0 +1,68 @@
+.navbar{
+    position: fixed;
+    width: calc(100% - 239px);
+    z-index: 4;
+    background-color: white;
+    padding: 1.2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.navbar-left .back-arrow{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292C2D;
+}
+.navbar-left .back-arrow svg{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.navbar-left p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #737373;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+.navbar-right .notification{
+    position: relative;
+    padding-right: 1.3rem;
+    border-right: 0.74px solid #000000;
+}
+.navbar-right .notification svg{
+    font-size:  1.3rem;
+    color: #000000;
+}
+.navbar-right .notification .notification-number{
+    position: absolute;
+    top: 0;
+    right: 1.2rem;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #B11226;
+}
+.navbar-right .notification .notification-number p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 0.3125rem;
+    color: #FFFFFF;
+}
+.navbar-right .user-image{
+    padding-left: 1.3rem;
+}

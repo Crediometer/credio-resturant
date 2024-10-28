@@ -1,0 +1,77 @@
+.sidebar{
+    width: 171px;
+    padding: 1.5rem 2.3rem;
+    background-color: #292C2D;
+    border-radius: 0px 30px 30px 0px;
+    height: 100vh;
+    position: fixed;
+}
+.company-logo-inner{
+    display: flex;
+    align-items: center;
+}
+/* .company-logo-inner img{
+    width: 100%;
+} */
+.sidebar-links{
+    margin-top: 27px;
+}
+.sidebar-links nav, .sidebar-bottom nav{
+    list-style: none;
+}
+.sidebar-links nav li{
+    margin-bottom: 15px;
+}
+.sidebar-links nav li a, .sidebar-bottom nav li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 0.875rem 0.75rem;
+}
+.sidebar-links nav li a:hover{
+    background-color: #B11226;
+    border-radius: 7.43px;
+}
+.sidebar-links nav li a .nav-icon{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-links nav li a .nav-icon svg, .sidebar-bottom nav li a svg{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    color: #B11226;
+    /* line-height: 24px; */
+}
+.sidebar-links nav li a p, .sidebar-bottom nav li a p{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+.sidebar-bottom{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+ .sidebar-bottom nav li{
+    margin-bottom: 30px;
+ }
+.link{
+    color: var(--grey-grey-600, #5D6679);
+}
+.active2{
+    background-color: #B11226;
+    border-radius: 7.43px;
+}

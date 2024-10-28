@@ -1,0 +1,67 @@
+.reservation-top{
+    padding-top: 110px;
+    display: flex;
+    justify-content: right;
+}
+.reservation-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+}
+.reservation-top button, .reservation-bottom button{
+    width: max-content;
+    padding: 0.875rem 1.375rem;
+    background-color: #B11226;
+    border: none;
+    border-radius: 7.48px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.reservation-bottom p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: underline ;
+}
+.resturant-image{
+    margin-top: 14px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.reservation-head{
+    margin-bottom: 25px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #000000;
+}
+.reservation-card{
+    margin-bottom: 25px;
+    background-color: #292C2D;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+.reservation-details h6{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #FAC1D9;
+}
+.reservation-details p{
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
