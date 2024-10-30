@@ -4,7 +4,24 @@ import "./TableView.css"
 import { MdTableRestaurant } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import reserved from "../../assets/reserved.png"
+import billed from "../../assets/billed.png"
+import free from "../../assets/free.png"
+import dinein from "../../assets/dinein.png"
+import { useState } from "react";
 const TableView = () => {
+    const [page, setPage] = useState(0);
+    const handlemain = ()=>{
+        setPage(0)
+    }
+    const handlebar = ()=>{
+        setPage(1)
+    }
+    const handlegarden = ()=>{
+        setPage(2)
+    }
+    const handleroof = ()=>{
+        setPage(3)
+    }
     return ( 
         <div className="table-view">
             <Navbar pageName="Table View"/>
@@ -36,24 +53,101 @@ const TableView = () => {
                     </div>
                 </div>
                 <div className="table-view-top-right">
-                    <div className="view">
+                    <div onClick={handlemain} className={(page == 0) ? "view active-view" : "view"}>
                         <p>Main Hall</p>
                     </div>
-                    <div className="view">
+                    <div onClick={handlebar} className={(page == 1) ? "view active-view" : "view"}>
                         <p>Bar Area</p>
                     </div>
-                    <div className="view">
+                    <div onClick={handlegarden} className={(page == 2) ? "view active-view" : "view"}>
                         <p>Garden</p>
                     </div>
-                    <div className="view">
-                        <p>Main Hall</p>
+                    <div onClick={handleroof} className={(page == 3) ? "view active-view" : "view"}>
+                        <p>RoofTop</p>
                     </div>
                 </div>
             </div>
             <div className="table-view-body">
-                <div className="table-setup">
-                    <img src={reserved}></img>
-                </div>
+                {page == 0 && (
+                    <div className="table-setup">
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                        <div>
+                            <img src={billed}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                        <div>
+                            <img src={billed}></img>
+                        </div>
+                        <div>
+                            <img src={dinein}></img>
+                        </div>
+                        <div>
+                            <img src={billed}></img>
+                        </div>
+                        <div>
+                            <img src={billed}></img>
+                        </div>
+                    </div>
+                )}
+                {page == 1 && (
+                    <div className="table-setup">
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                        <div>
+                            <img src={billed}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                    </div>
+                )}
+                {page == 2 && (
+                    <div className="table-setup">
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={free}></img>
+                        </div>
+                        
+                    </div>
+                )}
+                {page == 3 && (
+                    <div className="table-setup">
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                        <div>
+                            <img src={reserved}></img>
+                        </div>
+                    </div>
+                )}
                 <div className="table-tab">
                     <p className="tab-date">Thus. 11 January 2024</p>
                     <div className="tab-search">

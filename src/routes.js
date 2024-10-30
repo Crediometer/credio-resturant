@@ -11,6 +11,7 @@ import Orders from "./Pages/Orders/Order";
 import Reservation from "./Pages/Reservation/Reservation";
 import ReservationDetails from "./Pages/Reservation/ReservationDetails";
 import TableView from "./Pages/Table/TableView";
+import Menu from "./Pages/Menu/Menu";
 
 
 export default function Router() {
@@ -33,6 +34,7 @@ export default function Router() {
       element:  <Layout/>,
       children: [
         { index: true, element: <Orders/> },
+        { path: "menu", element: <Menu/> },
         { path: "reservation", element: <Reservation/> },
         { path: "reservation/details", element: <ReservationDetails/> },
         { path: "table-view", element: <TableView/> },

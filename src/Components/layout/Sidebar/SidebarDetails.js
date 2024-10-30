@@ -13,7 +13,7 @@ export const mainsidebar = [
     {
         title:"Menu",
         icon:<TbClockCheck/>,
-        link:"/dashboard/clocking"
+        link:"/home/menu"
     },
     {
         title:"Table View",

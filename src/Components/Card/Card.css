@@ -164,3 +164,98 @@
     border: none;
     border-radius: 10px;
 }
+.menu-card{
+    width: max-content;
+}
+.menu-card-top{
+    display: flex;
+    gap: 22px;
+}
+.menu-card-bottom{
+    background-color: #F3F4F7;
+    border: 1px solid #ECEDED;
+    padding: 8px 18px;
+    border-radius: 0px 0px 15px 15px;
+}
+.food-image, .menu-details{
+    width: 50%;
+}
+.food-image img{
+    width: 96px;
+    height: 136px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.menu-details h4{
+    font-family: "Poppins";
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #000000;
+}
+.menu-details p, .size-con p{
+    font-family: "Poppins";
+    font-size: 0.6125rem;
+    font-weight: 400;
+    color: #000000;
+}
+.size-con{
+    margin-top: 14px;
+}
+.sizes{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.size{
+    width: 19px ;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.size p{
+    font-family: "Poppins";
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #000000;
+}
+.menu-card-bottom h4{
+    font-family: "Poppins";
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+.amount-controller{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.amount-controller button{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #B11226;
+    border: none;
+    color: white;
+}
+.amount-controller span{
+    font-family: "Poppins";
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #000000;
+}
+.add-button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    background-color: #B11226;
+    border: none;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+}

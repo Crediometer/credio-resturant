@@ -45,12 +45,19 @@
 .view{
     padding: 0.625rem 1.625rem;
     border: 1px solid #B11226;
+    cursor: pointer;
+}
+.active-view{
+    background-color: #B11226;
 }
 .view p{
     font-family: "Poppins";
     font-weight: 500;
     font-size: 1rem;
     color: #000000;
+}
+.active-view p{
+    color: #FFFFFF;
 }
 .table-view-body{
     margin-top: 21px;
@@ -60,6 +67,15 @@
 .table-setup{
     width: 75%;
     background-color: #F3F4F7;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 70px;
+    flex-wrap: wrap;
+}
+.table-setup div{
+    height: max-content;
+    width: max-content;
 }
 .table-tab{
     width: 25%;
