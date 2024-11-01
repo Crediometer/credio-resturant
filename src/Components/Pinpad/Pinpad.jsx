@@ -18,6 +18,8 @@ const PinPad = () => {
     const onSubmit = (pin) =>{
         if(pin === "1111"){
             history('/clockin')
+        }else{
+          history("/kitchen")
         }
     }
     useEffect(() => {

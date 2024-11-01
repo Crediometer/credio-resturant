@@ -26,3 +26,17 @@ export const mainsidebar = [
         link:"/home/reservation"
     },   
 ]
+
+
+export const kitchensidebar = [
+    {
+        title:"Orders",
+        icon:<FiHome/>,
+        link:"/kitchen"
+    },
+    {
+        title:"Report",
+        icon:<TbClockCheck/>,
+        link:"/kitchen/report"
+    } 
+]

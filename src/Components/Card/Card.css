@@ -57,8 +57,13 @@
     align-items: center;
     gap: 10px;
     padding: 5px 7px;
-    background-color: #E3FFE4;
     border-radius: 5px;
+}
+.ready{
+    background-color: #E3FFE4;  
+}
+.inprocess{
+    background-color: #FFEDBE;
 }
 .order-card .order-card-top .order-card-top-inner .order-card-top-right .order-status svg{
     font-size: 0.75rem;
@@ -79,7 +84,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #37D101;
+    /* background-color: #37D101; */
 }
 .order-card .order-card-top .order-card-top-inner .order-card-top-right .order-state p{
     font-family: "Poppins";
@@ -137,6 +142,17 @@
     align-items: center;
     justify-content: space-between;
 }
+.order-message{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+}
+.order-message{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
 .total-order p{
     font-family: "Poppins";
     font-size: 1rem;
@@ -163,6 +179,9 @@
     background-color: #B11226;
     border: none;
     border-radius: 10px;
+}
+.finish{
+    background-color: #058B42 !important;
 }
 .menu-card{
     width: max-content;

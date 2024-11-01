@@ -9,7 +9,28 @@ import { IoIosCash, IoIosPeople } from "react-icons/io";
 import { TbCash } from "react-icons/tb";
 import { FaCreditCard, FaWallet } from "react-icons/fa";
 import MenuCard from "../../Components/Card/MenuCard";
+import { useSwipeable } from "react-swipeable";
+import { useState } from "react";
 const Menu = () => {
+    const [items, setItems] = useState([
+        { id: 1, name: 'Chicken', quantity: 4, amount: 5000 },
+        { id: 2, name: 'Jollof Rice', quantity: 4, amount: 5000 },
+        // Add more items here
+    ]);
+
+    const handleRemove = (id) => {
+        setItems((prevItems) => prevItems.filter(item => item.id !== id));
+    };
+
+    const handleRepeat = (item) => {
+        setItems((prevItems) => [...prevItems, { ...item, id: prevItems.length + 1 }]);
+    };
+    const handlers = useSwipeable({
+        onSwipedRight: () => handleRemove(items.id), // Call the remove function on swipe right
+        onSwipedLeft: () => handleRepeat(items),      // Call the repeat function on swipe left
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
     return ( 
         <div className="menu">
             <Navbar pageName="menu"/>
@@ -61,6 +82,15 @@ const Menu = () => {
                                 <p>12 items</p>
                             </div>
                         </div>
+                        <div className="menu-category">
+                            <div className="menu-icon">
+                                <RiDrinks2Fill />
+                            </div>
+                            <div className="menu-detail">
+                                <h6>Beverage</h6>
+                                <p>12 items</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="menu-bottom">
                         <MenuCard/>
@@ -94,6 +124,22 @@ const Menu = () => {
                             <MdEdit />
                         </div>
                     </div>
+                    <div className="menu-selected">
+                    {items.map(item => (
+                        <div className="selected" {...handlers}>
+                            <div className="select-details">
+                                <div className="selected-id">
+                                    <p>{item.id}</p>
+                                </div>
+                                <p className="selected-item">{item.name}</p>
+                                <p className="selected-time">x{item.quantity}</p>
+                            </div>
+                            <p className="selected-amount">
+                                NGN {item.amount}
+                            </p>
+                        </div>
+                    ))}
+                    </div>
                     <div className="menu-payment">
                         <div className="subtotal-menu">
                             <div className="subtotal">
@@ -101,8 +147,8 @@ const Menu = () => {
                                 <p>NGN 10,000</p>
                             </div>
                             <div className="subtotal">
-                                <p>Subtotal</p>
-                                <p>NGN 10,000</p>
+                                <p>Tax 5%</p>
+                                <p>NGN 500</p>
                             </div>
                         </div>
                         <div className="total">

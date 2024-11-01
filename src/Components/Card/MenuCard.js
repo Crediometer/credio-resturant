@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import menuimage from "../../assets/menu.jpeg"
 const MenuCard = () => {
     const [seats, setSeats] = useState(4);
 
@@ -18,7 +18,7 @@ const MenuCard = () => {
         <div className="menu-card">
             <div className="menu-card-top">
                 <div className="food-image">
-                    <img src="https://via.placeholder.com/100" alt="Food Image"/>
+                    <img src={menuimage} alt="Food Image"/>
                 </div>
                 <div className="menu-details">
                     <h4>Chicken</h4>

@@ -1,0 +1,238 @@
+.transaction-head{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #383E49;
+}
+.transaction-body{
+    margin-top: 30px;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #E4E4E7;
+    border-radius: 5px;
+}
+.transaction-table-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.4rem;
+}
+.transaction-top-period{
+    display: flex;
+    gap: 40px;
+}
+.period{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid #D0D5DD;
+    background-color: white;
+}
+.period p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #19191C;
+}
+.selected-period{
+    background-color: #000000;
+    border: 1px solid #EBEBEB;
+}
+.selected-period p{
+    color: white;
+}
+.transaction-top-filter{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.filter-sort{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #89898A;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+}
+.filter-search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6875rem 1.5rem;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px;
+}
+.filter-search svg{
+    color: #19191C;
+    font-size: 1rem;
+}
+.filter-search input{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-family: "Plus Jakarta Sans";
+    color: #828487;
+}
+.transaction-top-print{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    color: #000000;
+    font-size: 2rem;
+}
+.cumulative-top{
+    width: 70%;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding: 0rem 1.4rem;
+}
+.cumulative-body{
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+.cumulative-section{
+    width: 25%;
+}
+.cumulative-type{
+    width: max-content;
+    padding: 0.375rem 1.45rem;
+}
+.cumulative-type p{
+    font-size: 0.4375rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans";
+    color: #FFFFFF;
+}
+.type-sales{
+    background-color: #EB5757;
+}
+.type-tips{
+    background-color: #2F6EC9;
+}
+.type-labour{
+    background-color: #27AE60;
+}
+.type-other{
+    background-color: #4F4F4F;
+}
+.cumulative-section-inner{
+    height: 68vh;
+    overflow: scroll;
+    margin-top: 7px;
+}
+.cumulative-section-inner::-webkit-scrollbar{
+    display: none;
+}
+.ticket-card{
+    width: 100%;
+    padding: 0.5rem 0.6875rem 1rem 0.6875rem;
+    background-color: #F9F8F8;
+    border-radius: 1.79px;
+    margin-bottom: 6.2px;
+}
+.ticket-card:hover{
+    background-color: white;
+}
+.ticket-card-inner{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ticket-card-inner p{
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+}
+.ticket-card h5{
+    color: #71717A;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans";
+}
+.in-cash{
+    background-color: #2F6EC91A;
+}
+.in-cash div{
+    background-color: #2F6EC91A;
+}
+.in-cash p{
+    color: #14532D;
+}
+.cumulative-total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cumulative-total p{
+    margin-top: 12px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans";
+    color: #18181B;
+}
+.transaction-top{
+    padding-top: 110px;
+    display: flex;
+    justify-content: right;
+    font-size: 1.25rem;
+}
+.transaction-completed, .transaction-pending, .transaction-failed{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5625rem;
+    background-color: #DCFCE7;
+    border-radius: 40px;
+}
+.transaction-pending{
+    background-color: #FEF9C3;
+}
+.transaction-failed{
+    background-color: #FEE2E2;
+}
+.transaction-completed div, .transaction-pending div, .transaction-failed div{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #22C55E;
+}
+.transaction-pending div{
+    background-color: #FACC15;
+}
+.transaction-failed div{
+    background-color: #EF4444;
+}
+.transaction-completed p , .transaction-pending p, .transaction-failed p{
+    width: max-content;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #14532D;
+}
+.transaction-pending p{
+    color: #713F12;
+}
+.transaction-failed p{
+    color: #7F1D1D;
+}
+.card-details{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 0.8125rem;
+    color: #18181B;
+}
+.card-type{
+    margin-top: 3px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 0.8125rem;
+    color: #71717A;
+}

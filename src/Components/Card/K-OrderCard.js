@@ -1,8 +1,9 @@
 import { FaCheck } from "react-icons/fa";
+import { FaPrint } from "react-icons/fa6";
 import { MdModeEdit } from "react-icons/md";
 import "./Card.css";
 import { RiDeleteBin5Fill } from "react-icons/ri";
-const OrderCard = ({
+const K_OrderCard = ({
     id,
     tableNo,
     status,
@@ -61,24 +62,23 @@ const OrderCard = ({
                         })}
                     </table>
                 </div>
-                <div className="total-order">
-                    <p>SubTotal</p>
-                    <p>NGN {total}</p>
+                <div className="order-message">
+                   <p>Server Message - Order in place</p>
                 </div>
             </div>
             <div className="order-card-bottom">
                 <div className="order-icon">
-                    <MdModeEdit/>
+                    <FaPrint />
                 </div>
                 <div className="order-icon">
                     <RiDeleteBin5Fill />
                 </div>
-                <button>
-                    Pay Bill 
+                <button className={status == 0 ? "finish" : "start-now"}>
+                    {status == 0 ? "Finish" : "Start Now"}
                 </button>
             </div>
         </div>
     );
 }
  
-export default OrderCard;
+export default K_OrderCard;

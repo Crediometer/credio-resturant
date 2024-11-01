@@ -12,6 +12,9 @@ import Reservation from "./Pages/Reservation/Reservation";
 import ReservationDetails from "./Pages/Reservation/ReservationDetails";
 import TableView from "./Pages/Table/TableView";
 import Menu from "./Pages/Menu/Menu";
+import K_Layout from "./Components/layout/K-Layout";
+import K_Orders from "./Pages/Orders/K-Order";
+import Report from "./Pages/Report/Report";
 
 
 export default function Router() {
@@ -38,6 +41,14 @@ export default function Router() {
         { path: "reservation", element: <Reservation/> },
         { path: "reservation/details", element: <ReservationDetails/> },
         { path: "table-view", element: <TableView/> },
+      ],
+    },
+    {
+      path: "/kitchen",
+      element:  <K_Layout/>,
+      children: [
+        { index: true, element: <K_Orders/> },
+        { path: "report", element: <Report/> },
       ],
     },
   ]);
