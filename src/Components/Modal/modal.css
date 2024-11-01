@@ -11,6 +11,19 @@
     overflow: hidden;
     z-index: 6;
 }
+.clockin-modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000099;
+    overflow: hidden;
+    z-index: 40;
+}
 .modal-box{
     width: 40%;
     height: 90vh;

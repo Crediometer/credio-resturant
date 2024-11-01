@@ -4,7 +4,9 @@ import classNames from 'classnames'
 import { kitchensidebar, mainsidebar } from './SidebarDetails'
 import { Link, useLocation } from 'react-router-dom'
 import { FaPowerOff } from 'react-icons/fa'
-export const Sidebar = () => {  
+import ClockoutModal from '../../Modal/Clockout'
+import { useState } from 'react'
+export const Sidebar = ({handleShow}) => {  
     const location = useLocation();
     // const isLinkActive = (val) => {
     //     return location.pathname(val.link);
@@ -38,8 +40,8 @@ export const Sidebar = () => {
             </div>
             <div className="sidebar-bottom">
                 <nav>
-                    <li >
-                        <Link to='/dashboard/settings'
+                    <li onClick={handleShow} >
+                        <Link
                         className={ classNames('link', { ['active2']: location.pathname === '/dashboard/settings'})}
                         >
                             <FaPowerOff />
@@ -53,7 +55,7 @@ export const Sidebar = () => {
 }
 
 
-export const KitchenSidebar = () => {  
+export const KitchenSidebar = ({handleShow}) => {  
     const location = useLocation();
     // const isLinkActive = (val) => {
     //     return location.pathname(val.link);
@@ -87,8 +89,8 @@ export const KitchenSidebar = () => {
             </div>
             <div className="sidebar-bottom">
                 <nav>
-                    <li >
-                        <Link to='/dashboard/settings'
+                    <li onClick={handleShow} >
+                        <Link
                         className={ classNames('link', { ['active2']: location.pathname === '/dashboard/settings'})}
                         >
                             <FaPowerOff />
