@@ -18,6 +18,11 @@ const Orders = () => {
     const handleCancel = () =>{
         setValue(3)
     }
+
+     // Filter orders based on status
+     const filteredOrders = value === 0 
+     ? orderData 
+     : orderData.filter(order => order.status === value);
     return ( 
         <div className="orders">
             <Navbar pageName="Orders"/>
@@ -25,10 +30,10 @@ const Orders = () => {
                 <div className="orders-top-left">
                     <nav>
                         <ul>
-                            <li className={value == 0 && "active"} onClick={handleAll}>All</li>
-                            <li className={value == 1 && "active"} onClick={handleProcess}>In Process</li>
-                            <li className={value == 2 && "active"} onClick={handleCompleted}>Completed</li>
-                            <li className={value == 3 && "active"} onClick={handleCancel}>Cancelled</li>
+                            <li className={value === 0 && "active"} onClick={handleAll}>All</li>
+                            <li className={value === 1 && "active"} onClick={handleProcess}>In Process</li>
+                            <li className={value === 2 && "active"} onClick={handleCompleted}>Completed</li>
+                            <li className={value === 3 && "active"} onClick={handleCancel}>Cancelled</li>
                         </ul>
                     </nav>
                 </div>
@@ -40,19 +45,18 @@ const Orders = () => {
                 </div>
             </div>
             <div className="orders-body">
-                {orderData.map((order)=>{
-                    return(
-                        <OrderCard
-                            id={order.id}
-                            tableNo={order.tableNo}
-                            status = {order.status}
-                            date={order.date}
-                            time={order.time}
-                            orders={order.orders}
-                            total={order.total}
-                        />
-                    )
-                })}
+                {filteredOrders.map((order) => (
+                    <OrderCard
+                        key={order.id}
+                        id={order.id}
+                        tableNo={order.tableNo}
+                        status={order.status}
+                        date={order.date}
+                        time={order.time}
+                        orders={order.orders}
+                        total={order.total}
+                    />
+                ))}
                 {/* <OrderCard/>
                 <OrderCard/>
                 <OrderCard/>
